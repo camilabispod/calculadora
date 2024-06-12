@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="ambiente.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Calculando</h1>
+        <table class="calculadora">
+        <tr>
+            <td colspan="4"><input type="text"  id="display"></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-clear" onclick="cleardisplay('')">C</button></td>
+            <td><button class="btn btn-num" onclick="adddisplay('(')">(</button></td>
+            <td><button class="btn btn-num" onclick="adddisplay(')')">)</button></td>
+            <td><button class="btn btn-num" onclick="adddisplay('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-num" onclick="adddisplay('7')">7</button ></td>
+            <td><button class="btn btn-num" onclick="adddisplay('8')">8</button ></td>
+            <td><button class="btn btn-num" onclick="adddisplay('9')">9</button ></td>
+            <td><button class="btn btn-num" onclick="adddisplay('*')">*</button ></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-num" onclick="adddisplay('4')">4</button></td>
+            <td><button class="btn btn-num" onclick="adddisplay('5')">5</button></td>
+            <td><button class="btn btn-num" onclick="adddisplay('6')">6</button></td>
+            <td><button class="btn btn-num" onclick="adddisplay('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-num" onclick="adddisplay('1')">1</button></td>
+            <td><button class="btn btn-num" onclick="adddisplay('2')">2</button></td>
+            <td><button class="btn btn-num" onclick="adddisplay('3')">3</button></td>
+            <td><button class="btn btn-num" onclick="adddisplay('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-num" onclick="adddisplay('.')">.</button></td>
+            <td><button class="btn btn-num" onclick="adddisplay('0')">0</button></td>
+            <td><button class="btn btn-clearLast" onclick="clearLast()">&laquo</button></td>
+            <td><button class="btn btn-eql" onclick="fazerConta()">=</button></td>
+        </tr>
+        </table>
+    </section>
+    <script src="ambiente.js"></script>
+</body>
+</html>
